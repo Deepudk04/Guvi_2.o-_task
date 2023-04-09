@@ -1,0 +1,28 @@
+<html>
+    <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+    <script type = "text/javascript" src = "js/login.js" > </script>
+    </head>
+    <body>
+        <h2>LOGIN </h2>
+        <form  onsubmit ="myaction.collect_data(event)" method="post">
+            <div>
+                <label for="name">Email : </label>
+                <input type="email" id="name" name="name" required>
+              </div>
+              <div>
+                <label for="pass">Password : </label>
+                <input type="password" id="pass" name="pass" required>
+              </div>
+              <br>
+            <button name="sname" type ="submit" >LOGIN</button><br>
+            <a href="reset.php">forgot password?</a><br><br>
+           
+            
+        </form>
+        <p>Don't have an account?</p>
+        <a href="register.html"><button name="register">SIGN UP</button></a>
+        <br>
+        <br>
+    </body>
+</html>

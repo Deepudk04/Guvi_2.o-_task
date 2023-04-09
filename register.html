@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="js/register.js"></script>
+  </head>
+  <body>
+    <h1>Signup</h1>
+    <h2 style="color:skyblue;" id="error"><b></b></h2>
+    <form id="input_form" onsubmit="myaction.collect_data(event)"  method="post">
+      <div>
+        <label for="uname">Username : </label>
+        <input type="text" id="uname" name="uname" required>
+      </div>
+      <div>
+        <label for="umail">Email : </label>
+        <input type="email" id="umail" name="umail" required>
+      </div>
+      <div>
+        <label for="upass">Password : </label>
+        <input type="password" id="upass" name="upass" required>
+      </div>
+      <div>
+        <label for="cpass">Confirm Password : </label>
+        <input type="password" id="cpass" name="cpass" required>
+      </div>
+      <div>
+        <label for="uphone">Phone Number: </label>
+        <input type="text" id="uphone" name="uphone" required>
+      </div>
+      <input type="submit" id='sub' name="sub" value="SIGN UP" />
+      <a href="login.html"><input name= "backtologin" value="Back To Login" type="button"></a>
+    </form>
+  </body>
+</html>
